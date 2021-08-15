@@ -1,4 +1,4 @@
-const inquirer = require("inquirer");
+
 const cTable = require('console.table');
 const mysql = require('mysql2');
 const DatabaseCall = require('./db/index.js')
@@ -14,19 +14,6 @@ const app = express();
 // Express middleware
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-
-// create the connection to database
-const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'Shenendoah1234',
-    database: 'employeetracker'
-  },
-  console.log('Connected to the employeetracker database.')
-  );
-
-  module.exports = connection;
-
 
 // MAIN MENU PROMPT
 const mainMenu = () => {
