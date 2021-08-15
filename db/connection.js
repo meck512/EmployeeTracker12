@@ -1,3 +1,4 @@
+const util = require("util");
 const mysql = require('mysql2');
 
 // create the connection to database
@@ -10,4 +11,8 @@ const connection = mysql.createConnection({
   console.log('Connected to the employeetracker database.')
   );
 
-  module.exports = connection;
+  connection.connect();
+
+  db.query = util.promisify(connection.query);
+
+  module.exports = db;
