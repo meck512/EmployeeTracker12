@@ -1,4 +1,5 @@
 const connection = require("./connection");
+const cTable = require('console.table');
 
 class DatabaseCall {
     constructor(connection) {
