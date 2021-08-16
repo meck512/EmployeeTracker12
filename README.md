@@ -6,22 +6,26 @@
 * [Questions](#questions)
     
 ## Description
+
 This application is based on this User Story:
 AS A business owner
 I WANT to be able to view and manage the departments, roles, and employees in my company SO THAT I can organize and plan my business.
+<img src="assets\images\screenshot1.PNG"/>
+
+This application connects to an sql database to track relevant info for a business owner. It uses inquirer to prompt the user to be able to view, or add employees or roles.
 
 
-<img src="assets\images\menu.PNG"/>
-<img src="assets\images\screenshot.PNG"/>
 
-[DEMO Video](https://drive.google.com/file/d/1fQsXtQ7jodWkMN1OcTC2Svj3qXy6ICts/view?usp=sharing)
+
+
+[DEMO Video](https://drive.google.com/file/d/1VyohW3OtpqWVfnY12uaj5OvT33xeSTC9/view)
 
 ## Installation Instructions
-After cloning the repository, in the terminal type: “nmp install inquirer” (enter) then “npm install fs” (enter) then "npm install path" (enter).
+After cloning the repository, run npm install
 
 ## Usage Information
-To run the application type “node index.js” (enter) then the command line will prompt you for team member info. Once completed, navigate to the htmlGenerator folder and the teamSummaryPage.html file will contain all of your team member info on a simple html page.
-<img src="assets\images\questions.PNG"/>
+To run the application type “npm start” then the command line will prompt you with your choices. 
+<img src="assets\images\screenshot.PNG"/>
 
 
 ## Questions
